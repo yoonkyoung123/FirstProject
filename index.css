@@ -1,0 +1,183 @@
+nav{
+    display:flex;
+    height:54px;
+    background-color: white;
+    align-items:center;
+    padding:0 20px;
+    max-width:1000px;
+    margin:auto;
+    border-bottom: solid lightgray 1px;
+}
+nav > div{
+    flex:1;
+
+}
+nav input{
+    outline: none;
+    border:solid 1px lightgray;
+    padding: 3px 10px 3px 26px;
+}
+nav input::placeholder{
+    text-align: center;
+}
+nav input:focus::placeholder{
+    text-align: left;
+}
+.icons{
+    display:flex;
+    justify-content: space-evenly;
+}
+#container{
+    display: flex;
+    margin:auto;
+    width: fit-content;
+}
+.faccount{
+    display: flex;
+    align-items: center;
+    margin:10px 0;
+}
+.faccount .img{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 100%;
+}
+.faccount > :nth-child(2){
+    flex:1;
+    padding:4px;
+}
+.faccount > :nth-child(2) > :nth-child(2){
+    font-size:14px;
+    color:lightgray;
+}
+.faccount > :nth-child(3){
+    color: blue;
+}
+#story{
+    height:84px;
+    padding: 16px 0;
+    border: solid black 1px;
+    margin-bottom:24px;
+    background-color: white;
+    display:flex;
+    overflow: hidden;
+}
+
+.story-item{
+    margin:0 10px;
+}
+.story-img{
+    width: 66px;
+    height: 66px;
+    background-color: yellow;
+    border-radius: 100%;
+}
+.story-item > :nth-child(2){
+    text-align: center;
+}
+#content{
+    
+}
+
+section{
+    padding: 30px 0 ;
+    max-width: 600px;
+    width:600px;
+    flex:1;
+    background-color: white;
+}
+aside{
+    margin-top:30px;
+    width: 293px;
+    padding:4px;
+    margin-left:10px;
+}
+
+aside > :nth-child(2){
+    margin: 10px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside > :nth-child(3){
+    margin: 10px 0 ;
+}
+
+aside > :nth-child(4){
+    font-size:12px;
+    color:lightgray
+}
+
+.post{
+    height: 796px;
+}
+.post-title{
+    display: flex;
+    padding:10px;
+    border-bottom: solid lightgray 1px;
+    background-color: white;
+    align-items: center;
+}
+.post-title > :nth-child(1){
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.post-title > :nth-child(2){
+    margin-left:10px;
+}
+
+.post-title > :nth-child(3){
+    margin-left:auto;
+}
+
+.post-main{
+    height: 600px;
+    background-color: red;
+}
+.post-comment{
+    background-color: white;
+}
+.post-input{
+    display: flex;
+    background-color: white;
+    padding:5px;
+
+}
+.post-input > :nth-child(1){
+    margin-right:10px;
+}
+.post-input input{
+    flex:1;
+    border:none;
+    outline:none;
+}
+.post-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+.post-bar> :nth-child(1) svg{
+    margin-right: 12px;
+}
+body{
+    margin:0;
+    background-color: rgb(239, 237, 237);
+}
+@media(max-width: 1000px){
+    aside{
+        display: none;
+    }
+}
+@media (max-width:640px){
+    section{
+        max-width: 100%;   
+        padding:0;
+    }
+    #story{
+        margin: 0;
+    }
+}
